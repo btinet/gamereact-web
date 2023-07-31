@@ -1,0 +1,60 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div id="myCarousel" class="carousel slide py-5 bg-dark mb-6" data-bs-ride="carousel">
+        <div class="container">
+            <h1 class="h3 fw-light text-light">Das Machine-Vision-Konferenzsystem</h1>
+            <h2 class="h4 text-light">Intuitiv. Innovativ. Digital.</h2>
+        </div>
+
+    </div>
+    <div class="container py-4">
+        <div class="py-3"></div>
+        <h3 class="fw-light mb-3 text-center">Was ist GameReact Core?</h3>
+        <p class="lead text-center">
+            GameReact ist eine Software zur intelligenten medialen Unterstützung von Vorträgen, Referaten und Präsentationen, aber auch für innovative Game-Steuerung.
+        </p>
+        <div class="py-3"></div>
+        <h3 class="fw-light mb-3 text-center">Was kann GameReact Core?</h3>
+        <div class="row g-3">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="{{ asset('img/audioplayer.png') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Multimedia</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">
+                            <a href="#" class="btn btn-primary d-block btn-sm">mehr erfahren</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="{{ asset('img/diagramm.png') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Messen & Auswerten</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">
+                            <a href="#" class="btn btn-primary d-block btn-sm">mehr erfahren</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="{{ asset('img/control.png') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Steuern</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">
+                            <a href="#" class="btn btn-primary d-block btn-sm">mehr erfahren</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}

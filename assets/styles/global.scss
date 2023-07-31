@@ -8,6 +8,8 @@
 //
 // Import all of Bootstrap's CSS
 
+@import "../fonts/lineicons/lineicons.css";
+
 // @import "bootstrap/scss/bootstrap";
 
 // Option 2
@@ -105,4 +107,10 @@ $blue: #005EAA;
 .site-header a:hover {
   color: $body-color;
   text-decoration: none;
+}
+
+#gr-bg-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/6956-bg-230607.jpg");
 }

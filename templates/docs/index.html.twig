@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="container py-5">
+
+
+
+        <div class="row g-3">
+            <div class="col-12">
+                <h3 class="fw-light mb-3">Dokumentation</h3>
+                <p>
+                    GameReact ist eine Software zur intelligenten medialen Unterstützung von Vorträgen, Referaten und Präsentationen, aber auch für innovative Steuerung von Veranstaltungstechnik sowie Gaming.
+                </p>
+                <div class="d-block border-bottom mb-3"></div>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+                    <li class="bd-links-group py-2">
+                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                            <i class="bi bi-file-earmark-text-fill text-primary me-2" style="font-size: 1.1rem"></i>
+                            Erste Schritte
+                        </strong>
+                        <ul class="list-unstyled fw-normal pb-2 small">
+                            <li><a href="/docs/5.3/forms/overview/" class="bd-links-link d-inline-block rounded active">Übersicht</a></li>
+                            <li><a href="/docs/5.3/forms/form-control/" class="bd-links-link d-inline-block rounded">Form control</a></li>
+                            <li><a href="/docs/5.3/forms/select/" class="bd-links-link d-inline-block rounded">Select</a></li>
+                            <li><a href="/docs/5.3/forms/checks-radios/" class="bd-links-link d-inline-block rounded">Checks &amp; radios</a></li>
+                            <li><a href="/docs/5.3/forms/range/" class="bd-links-link d-inline-block rounded">Range</a></li>
+                            <li><a href="/docs/5.3/forms/input-group/" class="bd-links-link d-inline-block rounded">Input group</a></li>
+                            <li><a href="/docs/5.3/forms/floating-labels/" class="bd-links-link d-inline-block rounded" aria-current="page">Floating labels</a></li>
+                            <li><a href="/docs/5.3/forms/layout/" class="bd-links-link d-inline-block rounded">Layout</a></li>
+                            <li><a href="/docs/5.3/forms/validation/" class="bd-links-link d-inline-block rounded">Validation</a></li>
+                        </ul>
+                    </li>
+                    <li class="bd-links-group py-2">
+                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                            <i class="bi bi-gear-fill text-primary me-2" style="font-size: 1.1rem"></i>
+                            Setup
+                        </strong>
+                        <ul class="list-unstyled fw-normal pb-2 small">
+                            <li><a href="/docs/5.3/forms/overview/" class="bd-links-link d-inline-block rounded">Kalibrierung</a></li>
+                            <li><a href="/docs/5.3/forms/form-control/" class="bd-links-link d-inline-block rounded">Form control</a></li>
+                            <li><a href="/docs/5.3/forms/select/" class="bd-links-link d-inline-block rounded">Select</a></li>
+                            <li><a href="/docs/5.3/forms/checks-radios/" class="bd-links-link d-inline-block rounded">Checks &amp; radios</a></li>
+                            <li><a href="/docs/5.3/forms/range/" class="bd-links-link d-inline-block rounded">Range</a></li>
+                            <li><a href="/docs/5.3/forms/input-group/" class="bd-links-link d-inline-block rounded">Input group</a></li>
+                            <li><a href="/docs/5.3/forms/floating-labels/" class="bd-links-link d-inline-block rounded" aria-current="page">Floating labels</a></li>
+                            <li><a href="/docs/5.3/forms/layout/" class="bd-links-link d-inline-block rounded">Layout</a></li>
+                            <li><a href="/docs/5.3/forms/validation/" class="bd-links-link d-inline-block rounded">Validation</a></li>
+                        </ul>
+                    </li>
+                    <li class="bd-links-group py-2">
+                        <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                            <i class="bi bi-gear-fill text-primary me-2" style="font-size: 1.1rem"></i>
+                            Setup
+                        </strong>
+                        <ul class="list-unstyled fw-normal pb-2 small">
+                            <li><a href="/docs/5.3/forms/overview/" class="bd-links-link d-inline-block rounded">Kalibrierung</a></li>
+                            <li><a href="/docs/5.3/forms/form-control/" class="bd-links-link d-inline-block rounded">Form control</a></li>
+                            <li><a href="/docs/5.3/forms/select/" class="bd-links-link d-inline-block rounded">Select</a></li>
+                            <li><a href="/docs/5.3/forms/checks-radios/" class="bd-links-link d-inline-block rounded">Checks &amp; radios</a></li>
+                            <li><a href="/docs/5.3/forms/range/" class="bd-links-link d-inline-block rounded">Range</a></li>
+                            <li><a href="/docs/5.3/forms/input-group/" class="bd-links-link d-inline-block rounded">Input group</a></li>
+                            <li><a href="/docs/5.3/forms/floating-labels/" class="bd-links-link d-inline-block rounded" aria-current="page">Floating labels</a></li>
+                            <li><a href="/docs/5.3/forms/layout/" class="bd-links-link d-inline-block rounded">Layout</a></li>
+                            <li><a href="/docs/5.3/forms/validation/" class="bd-links-link d-inline-block rounded">Validation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-9">
+                <h4 class="fw-light mb-3">Erste Schritte</h4>
+                {{ include('test.md')|markdown_to_html }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

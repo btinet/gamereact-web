@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}GameReact Core{% endblock %}</title>
-        <link rel="icon" href="./favicon.svg">
+        <link rel="icon" href="/favicon.svg">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -35,7 +35,7 @@
                     <div class="container d-flex flex-grow-1 justify-content-between">
                         <ul class="navbar-nav">
                             <li class="navbar-brand">
-                                <a class="d-flex align-items-center text-decoration-none fs-3 fw-light" href="#">
+                                <a class="d-flex align-items-center text-decoration-none fs-3 fw-light" href="{{ url('app_index') }}">
                                     <svg class="bi me-2" width="24" height="24"><use xlink:href="#circle-half"></use></svg>
                                     GameReact Core
                                 </a>
@@ -43,9 +43,9 @@
                         </ul>
                         <div class="d-flex">
                             <ul class="navbar-nav d-none d-md-flex">
-                                <li class="nav-item"><a class="nav-link" href="#">Dokumentation</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Module</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Referenzen</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ url('docs_index') }}">Dokumentation</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ url('module_index') }}">Module</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ url('app_references') }}">Referenzen</a></li>
                             </ul>
                             <a class="ms-3 btn btn-primary text-bg-primary my-auto btn-sm" href="#">
                                 Download
@@ -58,14 +58,14 @@
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom small pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">GameReact Core</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Dokumentation</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Module</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Referenzen</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Impressum</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Datenschutz</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Kontakt</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi-github me-1"></i>Github</a></li>
+                <li class="nav-item"><a href="{{ url('app_index') }}" class="nav-link px-2 text-body-secondary">GameReact Core</a></li>
+                <li class="nav-item"><a href="{{ url('docs_index') }}" class="nav-link px-2 text-body-secondary">Dokumentation</a></li>
+                <li class="nav-item"><a href="{{ url('module_index') }}" class="nav-link px-2 text-body-secondary">Module</a></li>
+                <li class="nav-item"><a href="{{ url('app_references') }}" class="nav-link px-2 text-body-secondary">Referenzen</a></li>
+                <li class="nav-item"><a href="{{ url('app_imprint') }}" class="nav-link px-2 text-body-secondary">Impressum</a></li>
+                <li class="nav-item"><a href="{{ url('app_privacy') }}" class="nav-link px-2 text-body-secondary">Datenschutz</a></li>
+                <li class="nav-item"><a href="{{ url('app_contact') }}" class="nav-link px-2 text-body-secondary">Kontakt</a></li>
+                <li class="nav-item"><a href="https://www.github.com/btinet/gamereactcore" target="_blank" class="nav-link px-2 text-body-secondary"><i class="bi bi-arrow-up-right me-1"></i><i class="bi bi-github me-1"></i>Github</a></li>
             </ul>
             <p class="text-center text-body-secondary">© 2023 Wagner Pictures</p>
         </footer>

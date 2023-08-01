@@ -9,6 +9,7 @@
 // Import all of Bootstrap's CSS
 
 @import "../fonts/lineicons/lineicons.css";
+@import "~highlight.js/styles/docco.css";
 
 // @import "bootstrap/scss/bootstrap";
 
@@ -31,6 +32,12 @@ $blue: #005EAA;
 
 // Required
 @import "bootstrap/scss/functions";
+
+
+$input-border-color:                    null;
+$input-box-shadow:                      none 0 rgba(#000000, 0);
+
+
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
@@ -114,4 +121,70 @@ $blue: #005EAA;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../images/6956-bg-230607.jpg");
+}
+
+.form-select, .form-control {
+  border: none;
+  border-bottom: 1px solid $gray-400;
+  border-radius: 0;
+}
+
+.form-select:focus, .form-control:focus {
+  box-shadow: none;
+  border-bottom-color: $blue;
+}
+
+.bd-links-nav{font-size:.875rem}
+@media (max-width: 991.98px)
+{
+  .bd-links-nav{
+    -moz-column-count:2;column-count:2;-moz-column-gap:1.5rem;column-gap:1.5rem
+  }
+  .bd-links-nav .bd-links-group{
+    -moz-column-break-inside:avoid;break-inside:avoid
+  }
+  .bd-links-nav .bd-links-span-all{
+    -moz-column-span:all;column-span:all
+  }
+}
+
+.bd-links-group{-moz-column-break-inside:avoid;break-inside:avoid}
+
+.bd-links-link.active {
+  font-weight: 600;
+}
+.bd-links-link:hover, .bd-links-link:focus, .bd-links-link.active {
+  color: $body-color;
+  background-color: transparentize($primary,.8);
+}
+
+.bd-links-link {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.125rem;
+  color: $body-color;
+  text-decoration: none;
+}
+
+/* for block of numbers */
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+  color: #ccc;
+  border-right: 1px solid #CCC;
+  vertical-align: top;
+  padding-right: 5px!important;
+
+  /* your custom style here */
+}
+
+/* for block of code */
+.hljs-ln-code {
+  padding-left: 10px!important;
 }
